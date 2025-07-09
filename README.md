@@ -6,7 +6,7 @@ This is a **front-end-only clone** of the Facebook login and sign-up interface u
 - Branding and promotional section
 - Sign-up form with gender and date of birth fields
 
-> ⚠️ This project is for educational/demo purposes only. It does not connect to any backend or authenticate users.
+ ⚠️ This project is for educational/demo purposes only. It does not connect to any backend or authenticate users.
 
 ---
 
