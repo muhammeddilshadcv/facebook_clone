@@ -1,143 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Clone</title>
 
-    <style>
-        .upper_bar{
-            background-color: darkblue;
-            width: 100%;
-            height: 110px;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
 
-        .logo_section{
-            width: 55%;
-            padding-top: 40px;
-            float: left;
-        }
+    .upper_bar {
+      background-color: #1877f2;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .login_section{
-            width: 45%;
-            float: left;
-            padding-top: 30px;
-        
-        }
-        .logo_edits{
-            font-size: 1.3cm;
-            font-weight: bold;
-            color: aliceblue;
-            text-decoration: none;
-            margin-left: 120px;
-        }
-        .body_logo{
-            width: 60%;
-            height: 300px;
-            float: left;
-            padding-top: 35px;
+    .logo_edits {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
 
-        }
-        .body_login{
-            width: 40%;
-            height: 300px;
-            float: left;
+    .login_section form {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-        }
+    .login_section input[type="text"],
+    .login_section input[type="password"] {
+      padding: 6px;
+      border-radius: 4px;
+      border: none;
+    }
 
-    </style>
+    .login_section input[type="button"] {
+      padding: 6px 12px;
+      background-color: #42b72a;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
 
+    .container {
+      display: flex;
+      padding: 50px;
+    }
 
+    .body_logo {
+      flex: 1;
+      padding-right: 30px;
+    }
+
+    .body_logo img {
+      width: 90%;
+      max-width: 400px;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .body_logo pre {
+      font-size: 20px;
+      color: #333;
+    }
+
+    .body_login {
+      flex: 1;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .body_login h2 {
+      margin-top: 0;
+      font-size: 26px;
+      color: #1c1e21;
+    }
+
+    .body_login form input[type="text"],
+    .body_login form input[type="password"],
+    .body_login form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .dob-label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .dob-select {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .gender-section {
+      margin-top: 15px;
+    }
+
+    .gender-section label {
+      margin-right: 10px;
+    }
+
+    .signup-btn {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
 </head>
-<body style="margin: 0%;">
-    <div class="upper_bar">
-        <div class="logo_section">
-            <a href="C:\Users\muham\Documents\LPU Code\html\learnings\Untitled-2.html" class="logo_edits">Facebook</a>
-        </div>
+<body>
 
-        <div class="login_section">
-            <form>
-                <table>
-                    <tr>
-                        <th>Email or Phone</th>
-                        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</th>
-                    </tr>
-                    
-                </table>
-                <input type="text" >
-                <input type="text">
-                <input type="button" value="login" >
-                <table>
-                    <tr>
-                        <td>   </td>
-                        <td>   </td>
-                        <td><a href="C:\Users\muham\Documents\LPU Code\html\learnings\forgot_password.html" target="_blank" style="color: aliceblue;">Forgot password</a></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-
+  <div class="upper_bar">
+    <a href="#" class="logo_edits">facebook</a>
+    <div class="login_section">
+      <form>
+        <input type="text" placeholder="Email or Phone" />
+        <input type="password" placeholder="Password" />
+        <input type="button" value="Log In" />
+        <a href="#" style="font-size: 14px;">Forgotten password?</a>
+      </form>
     </div>
-    <div>
-        <div class="body_logo">
-            <center>
-                <pre style="font-size: 20px; color: black;">
-    facebook helps you connect and share with
-    the people around the world
-                </pre>
-            </center>
-            <img src="C:\Users\muham\Pictures\pyNVUg5EM0j.png" alt="low data" style="padding-left: 4cm;">
+  </div>
 
-
-        </div>
-        <div class="body_login">
-            <h2 style="font-weight: bold; font-size: 1.2cm; padding-left: .6cm;">Sign Up</h2>
-            <h2 style="margin: -1cm; font-size: medium; padding-left: 1.5cm;">It is always free and will be.</h2>
-            <form style="padding-top: 2cm;">
-                <input type="text" placeholder="first name" style="border-radius: 5mm; height: 7mm;">      
-                <input type="text" placeholder="last name" style="margin-left: 3mm; border-radius: 5mm; height: 7mm;">
-                <input type="text" placeholder="email" style="width: 9.5cm; margin-top: 5mm; border-radius: 5mm; height: 7mm;">
-                <input type="text" placeholder="re-enter email" style="width: 9.5cm; margin-top: 5mm; border-radius: 5mm; height: 7mm;">
-                <input type="text" placeholder="Password" style="width: 9.5cm; margin-top: 5mm; border-radius: 5mm; height: 7mm;">
-                <table>
-                    <tr>
-                        <td style="padding-top: 3mm; font-weight: bold;">date of birth</td>
-                    </tr>
-                </table>
-                <select>
-                    <option value="">day</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <select>
-                    <option value="">month</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <select>
-                    <option value="">year</option>
-                    <option value="1">2001</option>
-                    <option value="2">2002</option>
-                    <option value="3">2003</option>
-                    <option value="4">2004</option>
-                    <option value="5">2005</option>
-                </select>
-
-                <label>gender</label>
-                <input type="radio" placeholder="male">
-                <option value="male"></option>
-
-            </form>
-
-        </div>
+  <div class="container">
+    <div class="body_logo">
+      <pre>
+Facebook helps you connect and share 
+with the people in your life.
+      </pre>
+      <img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="Facebook image" />
     </div>
-    
+
+    <div class="body_login">
+      <h2>Sign Up</h2>
+      <p>It’s quick and easy.</p>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="text" placeholder="Mobile number or email" />
+        <input type="text" placeholder="Re-enter email" />
+        <input type="password" placeholder="New password" />
+
+        <div class="dob-label">Date of birth</div>
+        <div class="dob-select">
+          <select>
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          <select>
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+          </select>
+          <select>
+            <option>Year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+          </select>
+        </div>
+
+        <div class="gender-section">
+          <label>Gender:</label>
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Other</label>
+        </div>
+
+        <button class="signup-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
