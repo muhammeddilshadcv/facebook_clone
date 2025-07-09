@@ -38,3 +38,7 @@ cd facebook_clone
 code .
 ```
 
+### 🛠 Technologies Used
+  - HTML5
+  - CSS3 (Flexbox)
+
